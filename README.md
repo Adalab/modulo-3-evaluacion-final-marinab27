@@ -1,8 +1,23 @@
-# React + Vite
+# 🧙‍♂️ Harry Potter Character Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación React que permite buscar y filtrar personajes del universo Harry Potter usando la [HP API](https://hp-api.onrender.com/api/characters).
 
-Currently, two official plugins are available:
+## 🧩 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Buscar personajes por nombre.
+- Filtrar por casas de Hogwarts o personajes sin casa.
+- Ver lista de personajes con imagen y casa.
+- Acceder a una tarjeta detallada de cada personaje.
+
+## 🖥️ Tecnologías utilizadas
+
+- React
+- React Router DOM
+- SCSS para estilos
+- PropTypes para validación de props
+
+
+📥 API usada
+
+La aplicación consume los datos desde:
+https://hp-api.onrender.com/api/characters
