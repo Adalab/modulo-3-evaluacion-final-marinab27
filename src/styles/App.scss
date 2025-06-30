@@ -1,0 +1,202 @@
+#root {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Garamond", "Georgia", serif;
+  background-color: #fdfaf6;
+  color: #3a2f0b;
+}
+
+.logo-img {
+  width: 280px;
+  height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.form-button {
+  background-color: #d6b961;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Garamond", serif;
+  border-radius: 10px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #bfa14c;
+  }
+}
+
+.character-card {
+  background: linear-gradient(145deg, #f7f3eb, #eae3d8);
+  border-radius: 20px;
+  border: 1px solid #c6b88e;
+  padding: 20px;
+  margin: 10px;
+  max-width: 140px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(60, 44, 21, 0.1);
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(90, 70, 40, 0.2);
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  img {
+    width: 120px;
+    height: 160px;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+}
+
+.characters-list__ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.character-name {
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #5a450e;
+  margin-top: 10px;
+}
+
+.character-house {
+  color: #7b6220;
+  font-weight: 600;
+}
+
+.house-select,
+.character-search {
+  margin: 10px;
+}
+
+.character-card-link {
+  background-color: #f8f8f6;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(117, 117, 117, 0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  &__image {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  &__info {
+    width: 100%;
+    text-align: left;
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #332c10;
+    }
+    p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      color: #444;
+      line-height: 1.4;
+    }
+  }
+  &__house {
+    font-weight: bold;
+    color: #946800;
+  }
+  &__species,
+  &__birth {
+    font-style: italic;
+  }
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background-color: #e2d36f;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: #d1c04f;
+  }
+}
+
+.no-results {
+  font-family: "Garamond", serif;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #7a6844;
+  background-color: #f6f0e0;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d9c79c;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.magic-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    bottom: 0;
+    width: 6px;
+    height: 6px;
+    background: #d6b961;
+    border-radius: 50%;
+    animation: sparkle 3s infinite ease-out;
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px) scale(0.8);
+    opacity: 0;
+  }
+}
