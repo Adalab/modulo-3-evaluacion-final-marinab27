@@ -83,7 +83,7 @@
 }
 
 .character-card-link {
-  background-color: #f8f8f6;
+  background-color: #f0f0e8;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(117, 117, 117, 0.1);
   padding: 2rem;
@@ -108,14 +108,14 @@
   }
   &__info {
     width: 100%;
-    text-align: left;
+    text-align: center;
     h3 {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       color: #332c10;
     }
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin: 0.5rem 0;
       color: #444;
       line-height: 1.4;
